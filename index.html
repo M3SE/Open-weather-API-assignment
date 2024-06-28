@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <section>
+        <h2>Enter Zip Code</h2>
+        <input type="text" id="zipCode" placeholder="Enter Zip Code">
+        <button onclick="getWeather()">Get Weather</button>
+    </section>
+    <section id="weatherData">
+        <h2>Weather Information</h2>
+        <p><strong>Date:</strong> <span id="currentDate"></span></p>
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>Current Temperature:</strong> <span id="temperature"></span> °F</p>
+        <p><strong>Current Conditions:</strong> <span id="conditions"></span></p>
+        <p><strong>High/Low:</strong> <span id="tempHiLo"></span> °F</p>
+    </section>
+    <script src="api.js"></script>
+</body>
+</html>
